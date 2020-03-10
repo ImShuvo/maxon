@@ -26,7 +26,7 @@
 		the_content( sprintf(
 			wp_kses(
 				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'maxon_un' ),
+				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'maxon' ),
 				array(
 					'span' => array(
 						'class' => array(),
@@ -37,7 +37,7 @@
 		) );
 
 		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'maxon_un' ),
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'maxon' ),
 			'after'  => '</div>',
 		) );
 		?>

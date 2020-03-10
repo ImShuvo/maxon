@@ -1,8 +1,8 @@
 <?php
 /**
- * maxon_un Theme Customizer
+ * maxon Theme Customizer
  *
- * @package maxon_un
+ * @package maxon
  */
 
 /**

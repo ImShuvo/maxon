@@ -4,12 +4,11 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package maxon_un
+ * @package maxon
  */
 
 get_header();
 ?>
-
 <section id="primary" class="content-area container">
 	<div class="row">
 		<div class="col-md-12">

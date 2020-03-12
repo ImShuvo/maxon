@@ -78,6 +78,7 @@ if( ! function_exists( 'maxon_setup' )):
 
 		//*set image size *//
 		add_image_size('maxon_blog_post_thumb',350,233,true);
+		add_image_size('maxon_el_blog_post_thumb',310,276,true);
 
         /*
 		 * Let WordPress manage the document title.

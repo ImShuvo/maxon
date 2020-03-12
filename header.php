@@ -21,35 +21,37 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'maxon_un' ); ?></a>
-
-
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'maxon' ); ?></a>
 
 	<header class="header abs-header">
-		<nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
-		  <div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<a class="navbar-brand" href="#">Maxon</a>
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+				<a class="navbar-brand" href="home-01.html"><img src="images/logo.png" alt=""></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+
+
 				<?php
 				wp_nav_menu( array(
 					'theme_location'    => 'primary_menu',
 					'depth'             => 2,
 					'container'         => 'div',
 					'container_class'   => 'collapse navbar-collapse',
-					'container_id'      => 'bs-example-navbar-collapse-1',
-					'menu_class'        => 'nav navbar-nav',
+					'container_id'      => 'navbarSupportedContent',
+					'menu_class'        => 'navbar-nav ml-auto',
 					'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
 					'walker'            => new WP_Bootstrap_Navwalker(),
 				) );
 				?>
-			</div>
-		</nav>
-    </header>
+
+			</nav>
+		</div>
+	</header>
 
 
 
-	<div id="content" class="site-content">
+
+
+

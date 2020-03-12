@@ -152,12 +152,14 @@ function maxon_enqueue_styles_scripts(){
     wp_enqueue_style('maxon',get_stylesheet_uri());
     wp_enqueue_style('bootstrap', MAXON_CSS . 'bootstrap.min.css', array());
     wp_enqueue_style('owl-carousel', MAXON_CSS . 'owl.carousel.min.css', array());
+    wp_enqueue_style('themify-icons', MAXON_CSS . 'themify-icons.css', array());
     wp_enqueue_style('maxon-custom', MAXON_CSS . 'custom.css', array());
     wp_enqueue_style('google-font', 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:300,400,500,700', array());
     wp_enqueue_style('maxon-main-style', MAXON_CSS . 'main.css', array());
     //add script
 	wp_enqueue_script('bootstrap', MAXON_JS . 'bootstrap.min.js',array('jquery'),false,true);
 	wp_enqueue_script('owl-carousel', MAXON_JS . 'owl.carousel.min.js',array('jquery'),false,true);
+    wp_enqueue_script('onscreeen', MAXON_JS . 'onscreeen.js',array('jquery'),false,true);
     wp_enqueue_script('maxon-custom', MAXON_JS . 'maxon.js',array('jquery'),false,true);
     //reply comments
   	if ( is_singular() && comments_open() && get_option('thread_comments') ) {

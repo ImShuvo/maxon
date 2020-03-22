@@ -1262,6 +1262,55 @@ img.ael:nth-child(1) {
           box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.05);
 }
 
+/* cf7 form*/
+.form-control, .wpcf7-form-control {
+  border: 1px solid #e5e6ea;
+  border-radius: 0;
+  padding: 20px 25px;
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 30px;
+  height: 60px;
+  width: 100%;
+  -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+.wpcf7-form-control:focus, .form-control:focus {
+  outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #ff7214;
+}
+
+textarea.wpcf7-form-control,
+textarea.form-control {
+  height: 180px;
+}
+
+.wpcf7-form-control.wpcf7-submit {
+  background-color: #ff7214;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 0.8;
+  text-transform: capitalize;
+  padding: 20px 40px;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: 0;
+}
+.wpcf7-form-control.wpcf7-submit:hover {
+  background-color: #ffe2cf;
+  color: #ff7214;
+  -webkit-box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.05);
+}
+
 /*************************
  * Partners section
  */

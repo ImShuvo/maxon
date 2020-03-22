@@ -52,7 +52,6 @@ figure {
 section {
   display: block;
   position: relative;
-  padding: 80px 0;
   width: 100%; }
 
 /**
@@ -325,7 +324,6 @@ header.header.abs-header.sticky {
 
 .abs-header {
   position: absolute;
-  top: 0;
   left: 0;
   z-index: 2; }
   @media screen and (max-width: 991px) {
@@ -375,19 +373,19 @@ header.header.abs-header.sticky {
     .navbar-nav li:hover .sub-menu {
       opacity: 1;
       visibility: visible; } }
-  .navbar-nav li:last-child a {
-    color: #fff;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 0.8;
-    text-transform: capitalize;
-    padding: 10px 20px;
-    background-color: #ff7214; }
-    .navbar-nav li:last-child a:hover {
-      background-color: #ffe2cf;
-      color: #ff7214;
-      box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.05); }
+.navbar-nav > li:last-child a {
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 0.8;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  background-color: #ff7214; }
+  .navbar-nav > li:last-child a:hover {
+    background-color: #ffe2cf;
+    color: #ff7214;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.05); }
 
 /**
  * Header style
@@ -444,7 +442,6 @@ header.header.abs-header.sticky {
 
 .abs-header {
   position: absolute;
-  top: 0;
   left: 0;
   z-index: 2; }
   @media screen and (max-width: 991px) {
@@ -717,7 +714,7 @@ img.ael:nth-child(1) {
 .single-fun {
   position: relative; }
   .single-fun img {
-    max-width: 65px;
+    max-width: 65px !important;
     margin-bottom: 30px; }
     @media screen and (max-width: 575px) {
       .single-fun img {
@@ -785,6 +782,8 @@ img.ael:nth-child(1) {
     max-width: 160px;
     height: 160px;
     margin-bottom: 40px; }
+  .test-caro .circle {
+    border-radius: 50%; }
   .test-caro .testi-info {
     margin-top: 40px; }
 
@@ -798,7 +797,8 @@ img.ael:nth-child(1) {
     background: none;
     margin: 10px;
     outline: none;
-    position: relative; }
+    position: relative;
+    padding: 0; }
     .owlControl button i {
       position: relative; }
   .owlControl button:before {
@@ -930,25 +930,43 @@ img.ael:nth-child(1) {
 @media screen and (max-width: 767px) {
   .contact .contact-info {
     margin-bottom: 30px; } }
-.contact form .form-control {
+.contact .form-control, .contact .wpcf7-form-control {
   border: 1px solid #e5e6ea;
   border-radius: 0;
   padding: 20px 25px;
   font-size: 14px;
   color: #999;
   margin-bottom: 30px;
-  height: 60px; }
-.contact form .form-control:focus {
+  height: 60px;
+  width: 100%; }
+.contact .wpcf7-form-control:focus, .contact .form-control:focus {
   outline: none !important;
   box-shadow: none;
   border: 1px solid #ff7214; }
-.contact form textarea.form-control {
+.contact textarea.wpcf7-form-control,
+.contact textarea.form-control {
   height: 180px; }
+.contact .wpcf7-submit {
+  background-color: #ff7214;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 0.8;
+  text-transform: capitalize;
+  padding: 20px 40px;
+  width: auto;
+  border: none;
+  margin-left: 15px; }
+  .contact .wpcf7-submit:hover {
+    background-color: #ffe2cf;
+    color: #ff7214;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.05); }
 
 /*************************
  * Partners section
  */
-.partners-logo img {
+.partners-logo.owl-carousel img {
   max-width: 186px;
   width: 100%; }
 
